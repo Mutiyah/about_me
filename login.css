@@ -1,0 +1,29 @@
+#login {
+  width: 100% !important;
+  background-color: rgb(233, 232, 232);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#login h1 {
+  text-align: center;
+}
+
+.login_inputs{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#login form #contact_btn,
+.login_inputs input,
+.login_inputs label {
+  width: 60%;
+  margin-left: 0;
+  margin: auto;
+}
+
+#login form #contact_btn{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+header, main, footer{
+    width: 70%;
+    margin: auto;
+}
+
+/***************** 
+   header section 
+******************/
+header{
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #000;
+}
+
+header, header nav ul{
+    display: flex;
+}
+
+header #logo img{
+    width: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+    font-size: 1.2em;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+nav ul li a:focus{
+    border-bottom: 3px solid orange;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+header nav ul{
+    justify-content: space-between;
+}
+
+#logo, header nav{
+    width: 50%;
+}
+
+
+/***************** 
+   main section 
+******************/
+main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/************ 
+   about me
+*************/
+.much_more_about_me{
+    display: flex;
+    align-items: center;
+}
+
+.much_more_about_me img{
+    border-radius: 50%;
+}
+
+.much_more_about_me > #hobbies_heading{
+    margin-right: 30px;
+    border: none;
+    align-self: flex-start;
+}   
+
+#about_moi{
+    line-height: 2;
+    margin-top: 10px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+
+.brief_about_me:first-child{
+    padding-bottom: 30px;
+}
+
+.brief_about_me:last-child{
+    padding-bottom: 10px;
+}
+
+.brief_about_me p{
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.brief_about_me small{
+    font-weight: normal;
+    font-size: 1.1em;
+    color: grey;
+}
+
+.brief_about_me p, .brief_about_me small{
+    font-family: fedra sans, sans-serif;
+
+}
+
+/********** 
+   hobbies 
+***********/
+.more_about_me{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.more_about_me:nth-child(odd){
+    background-color: rgb(233, 232, 232);
+}   
+
+.more_about_me:nth-child(even){
+    background-color: rgb(182, 181, 181);
+    /* color: #fff; */
+}
+
+.more_about_me:first-child{
+    margin-top: 50px;
+}
+
+
+#hobbies_heading img{
+    width: 200px;
+    object-fit: contain;
+}
+
+#hobbies_heading{
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 5px;
+}
+
+#hobbies_heading_skill, #hobbies_heading{
+    border-bottom: 3px solid #000;
+}
+
+ span{
+    font-size: 1.2em;
+}
+
+.more_about_me ul, .more_about_me ol{
+    width: 50%;
+}
+
+.more_about_me ul li, .more_about_me ol li{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.more_about_me ul li{
+    list-style-type: circle;
+}
+
+/********** 
+  skills
+***********/
+.skills{
+    background-color: transparent !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#hobbies_heading_image_skill img{
+    width: 60px;
+    object-fit: contain;
+    border: 10px solid grey;
+    border-radius: 10px;
+}
+
+#hobbies_heading_image_skill img:hover{
+    border-color: rgb(59, 58, 58);
+}
+
+#hobbies_heading_skill, #hobbies_heading_image_skill{
+    width: 48%;
+    background-color: rgb(233, 232, 232);
+    border-radius: 10px;
+    padding: 20px;
+    max-height: fit-content;
+}
+
+#hobbies_heading_image_skill{
+    padding-bottom: 5px;
+}
+
+#hobbies_heading_image_skill img{
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#hobbies_heading_image_skill{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+}
+
+
+/********** 
+Contact me
+***********/
+#contact_me{
+   text-align: center;
+}
+
+#contact_me button{
+    padding: 13px 24px;
+    white-space: nowrap;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 0  3px 5px #000;
+    cursor: pointer;
+}
+
+#contact_me button:hover{
+    background-color: rgb(191, 125, 3);
+}
+
+/********** 
+  footer
+***********/
+footer{
+    border-top: 1px solid #000;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+/***************************** 
+Media query >>> header section 
+******************************/
+@media (max-width: 950px){
+    header{
+        justify-content: space-between;
+        display: flex;
+    }
+
+    header > nav > ul{
+        flex-direction: column;
+    }
+
+    header > nav > ul > li{
+        margin-bottom: 10px;
+        border-bottom: 1px solid green;
+        width: fit-content;
+    }
+
+    .much_more_about_me{
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .much_more_about_me #hobbies_heading{
+       align-self: center;
+       text-align: center;
+       margin-right: 0;
+    }
+
+
+    .hobbies_head{
+        width: 100% !important;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 700px){
+.brief_about_me p{
+    font-size: 2em;
+}
+
+.skills{
+    flex-direction: column;
+    align-items: center;
+}
+
+    #hobbies_heading h2 span, #hobbies_heading_skill span{
+        display: none;
+    }
+    
+    #hobbies_heading_skill, #hobbies_heading_image_skill{
+        width: 100%;
+    }
+    
+    #hobbies_heading_image_skill img{
+        width: 50px;
+    
+    }
+
+}
+
+@media (max-width: 500px){
+    .brief_about_me p{
+        font-size: 1.5em;
+    }
+
+header, main, footer{
+    width: 90%;
+}
+
+.more_about_me{
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies_heading{
+    margin-bottom: 20px;
+}
+
+
+#hobbies_heading img{
+    width: 150px;
+}
+
+}
+

@@ -1,0 +1,110 @@
+#contain_main_reg {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(233, 232, 232);
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+#contain_main_reg form,
+#contain_main_reg form section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contain_main_reg form section > .contain_sub_reg {
+  width: 48%;
+}
+
+#contain_main_reg form {
+  flex-direction: column;
+}
+
+#contain_main_reg h1 {
+  text-align: center;
+}
+
+#contain_main_reg form div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#contain_main_reg form section > .contain_sub_reg > div > label {
+  margin-left: -10px;
+}
+
+#contain_main_reg form section > .contain_sub_reg > div > label span, #sub_reg #gender label > span {
+  color: red;
+  font-weight: bolder;
+}
+
+#sub_reg #gender{
+    margin-top: 5px;
+}
+
+#contain_main_reg form section > .contain_sub_reg > div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#sub_reg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contain_main_reg form section > .contain_sub_reg > div > label,
+#contain_main_reg form section > .contain_sub_reg > div > textarea,
+#sub_reg #gender select,
+#contain_main_reg form section > .contain_sub_reg > div > input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 10px;
+}
+
+#contain_main_reg > form > #sub_reg > #contact_btn {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+#contain_main_reg > form > #sub_reg > #contact_btn > button {
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+@media (max-width: 750px) {
+  #contain_main_reg > form > #sub_reg > #contact_btn > button,
+  #contain_main_reg form section > .contain_sub_reg > div > label {
+    font-size: 1em;
+    white-space: nowrap;
+    padding-bottom: 0;
+  }
+  #contain_main_reg h1 {
+    font-size: 1.2em;
+  }
+
+  #contain_main_reg form section {
+    flex-direction: column;
+  }
+
+  #contain_main_reg form section > .contain_sub_reg {
+    width: 100%;
+  }
+
+  #contain_main_reg form section > .contain_sub_reg > div {
+    margin-bottom: 10px;
+  }
+}
+
+/* @media (max-width: 450px) {
+  #contain_main_reg {
+    width: 100%;
+  }
+} */
